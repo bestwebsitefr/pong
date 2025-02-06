@@ -1,6 +1,8 @@
 PONG
 <script>
-while (true){
-  window.open("https://bestwebsitefr.github.io/pong/")
-}
+window.open("https://bestwebsitefr.github.io/pong/")
+window.addEventListener('beforeunload', (event) => {
+  event.preventDefault();
+  event.returnValue = '';
+});
 </script>
